@@ -5,11 +5,14 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
   },
   "author": "Zand Yasin",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
